@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Car Workshop Appointment</h1>
+    <form action="submit_appointment.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" required>
+        <label for="car_color">Car Color:</label>
+        <input type="text" id="car_color" name="car_color">
+        <label for="car_license">Car License Number:</label>
+        <input type="text" id="car_license" name="car_license" required>
+        <label for="car_engine">Car Engine Number:</label>
+        <input type="text" id="car_engine" name="car_engine" required>
+        <label for="appointment_date">Appointment Date:</label>
+        <input type="date" id="appointment_date" name="appointment_date" required>
+        <label for="mechanic">Select Mechanic:</label>
+        <select id="mechanic" name="mechanic" required></select>
+        <input type="submit" value="Book Appointment">
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
